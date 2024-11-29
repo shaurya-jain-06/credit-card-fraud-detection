@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
+<title>ML API</title>
+</head>
+<body>
+<form action="{{ url_for('predict')}}" method="POST">
+  <input id="input-1" type="text" placeholder="Enter Amount" name ="time" required autofocus />
+  <label for="input-1">
+    <span class="label-text">AMOUNT</span>
+    <span class="nav-dot"></span>
+    <div class="signup-button-trigger">Credit Card Fraud Prediction</div>
+  </label>
+  <input id="input-2" type="text" placeholder="City Zip Code" name="amount" required />
+  <label for="input-2">
+    <span class="label-text">ZIP CODE</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-3" type="text" placeholder="Enter number of Credit Card Users" name="tm" required />
+  <label for="input-3">
+    <span class="label-text">CREDIT CARD USERS IN THE CITY</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-4" type="text" placeholder="Enter Age of Customer" name="ti" required />
+  <label for="input-4">
+    <span class="label-text">AGE</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-5" type="text" placeholder="Enter Latitude Distance Between Transactions" name="ct" required />
+  <label for="input-5">
+    <span class="label-text">LATITUDE DISTANCE</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-6" type="text" placeholder="Enter Longitude Distance Between Transactions" name="location" required />
+  <label for="input-6">
+    <span class="label-text">LONGITUDE DISTANCE</span>
+    <span class="nav-dot"></span>
+  </label>
+  <input id="input-7" type="text" placeholder="Credit Card Number" name="em" required />
+  <label for="input-7">
+    <span class="label-text">CREDIT CARD NUMBER</span>
+    <span class="nav-dot"></span>
+  </label>
+  
+  
+  <button type="submit">Predict</button>
+  <p class="tip">Press Tab</p>
+  <div class="signup-button">Credit card Fraud Detection</div>
+</form>
+</body>
+</html>
